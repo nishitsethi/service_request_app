@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".loginAdmin"
+        android:background="#202442">
+
+    <EditText
+            android:layout_width="345dp"
+            android:layout_height="51dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/adminPass"
+            app:layout_constraintStart_toStartOf="@+id/adminMobnum"
+            app:layout_constraintEnd_toEndOf="@+id/adminMobnum"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintTop_toBottomOf="@+id/adminMobnum" android:layout_marginTop="16dp"
+            android:hint="Password" android:textColor="@color/colorWhite"
+            android:background="@drawable/input_bg"
+            android:paddingLeft="15sp" android:textColorHint="@color/colorTextLightBlue"
+            android:backgroundTint="@color/colorLightDarkBlue"/>
+    <TextView
+            android:text="Admin Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewAdminLogin"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.153"
+            android:textSize="36sp" android:textStyle="normal|bold" android:textColorLink="#FFFFFF"
+            android:textColor="#FFFFFF" app:layout_constraintHorizontal_bias="0.498"
+            android:fontFamily="sans-serif-condensed"/>
+    <EditText
+            android:layout_width="347dp"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/adminMobnum"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAdminLogin" android:layout_marginTop="40dp"
+            android:hint="Username" android:textColor="@color/colorWhite"
+            android:background="@drawable/input_bg"
+            android:paddingLeft="15sp" android:textColorHint="@color/colorTextLightBlue"
+            android:backgroundTint="@color/colorLightDarkBlue"/>
+    <Button
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_height="59dp" android:id="@+id/adminSigninButton"
+            app:layout_constraintStart_toStartOf="@+id/adminPass" app:layout_constraintEnd_toEndOf="@+id/adminPass"
+            app:layout_constraintTop_toBottomOf="@+id/userLoginButton" android:layout_marginTop="24dp"
+            app:layout_constraintHorizontal_bias="0.497" android:background="@drawable/button_bg"
+            android:textColor="@color/colorLightDarkBlue"/>
+
+
+    <TextView
+            android:text="User login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/userLoginButton"
+            app:layout_constraintEnd_toEndOf="@+id/adminPass" app:layout_constraintTop_toBottomOf="@+id/adminPass"
+            android:layout_marginTop="40dp" android:layout_marginEnd="20dp" android:textColor="@color/colorGreen"
+            android:textSize="20sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

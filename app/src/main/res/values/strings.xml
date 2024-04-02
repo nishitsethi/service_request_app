@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="active_requests">Active requests</string>
+    <string name="local_services">Local services</string>
+    <string name="past_requests">Past requests</string>
+    <string name="raise_request" tools:ignore="DuplicateDefinition">Raise request</string>
+    <string name="for_mobile_no">For Mobile No. :</string>
+    <string name="for_mobile_number">For Mobile Number:</string>
+    <string name="generate_report">Generate report</string>
+    <string name="carpentry">Carpentry</string>
+    <string name="gardening">Gardening</string>
+    <string name="electrical">Electrical</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="from">From:</string>
+    <string name="filter">Filter</string>
+    <string name="yyyy_mm_ddd">YYYY-MM-DDD</string>
+    <string name="yyyy_mm_dd" tools:ignore="DuplicateDefinition">YYYY-MM-DD</string>
+    <string name="filter_by_date">Filter By Date</string>
+    <string name="to">To:</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="raise_a_request" tools:ignore="DuplicateDefinition">Raise a request</string>
+
+</resources>

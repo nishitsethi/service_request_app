@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.myapplication">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Society app"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApplication">
+
+        <activity android:name=".managerReport">
+        </activity>
+        <activity android:name=".Electrical">
+        </activity>
+        <activity android:name=".Carpentry">
+        </activity>
+        <activity android:name=".Gardening">
+        </activity>
+        <activity android:name=".Plumbing">
+        </activity>
+
+        <activity android:name=".homeAdmin">
+        </activity>
+        <activity android:name=".Pastrequests">
+        </activity>
+        <activity android:name=".loginAdmin">
+        </activity>
+        <activity android:name=".managerhomepage">
+        </activity>
+        <activity android:name=".Activerequest">
+        </activity>
+        <activity android:name=".Raiserequest">
+        </activity>
+        <activity android:name=".Home_page">
+        </activity>
+
+        <activity android:name=".LoginForm">
+
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN"/>
+
+
+             <category android:name="android.intent.category.LAUNCHER"/>
+             </intent-filter>
+        </activity>
+        <activity android:name=".RegisterForm">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN"/>-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+
+    </application>
+
+</manifest>

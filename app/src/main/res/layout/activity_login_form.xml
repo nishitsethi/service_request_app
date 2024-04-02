@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginForm"
+        android:background="#202442">
+    <TextView
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewAdminLogin"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.153"
+            android:textSize="36sp" android:textStyle="normal|bold" android:textColorLink="#FFFFFF"
+            android:textColor="#FFFFFF" app:layout_constraintHorizontal_bias="0.498"
+            android:fontFamily="sans-serif-condensed"/>
+    <TextView
+            android:text="Admin Login"
+            android:layout_width="140dp"
+            android:layout_height="27dp" android:id="@+id/adminLoginButton"
+            android:textColor="#41cd7d" android:textSize="16sp" android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/password1" app:layout_constraintTop_toBottomOf="@+id/password1"
+            android:layout_marginTop="16dp"/>
+    <Button
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/login"
+            app:layout_constraintTop_toBottomOf="@+id/adminLoginButton" android:layout_marginTop="24dp"
+            android:background="@drawable/button_bg" android:textColor="@color/colorDarkblue"
+            app:layout_constraintEnd_toEndOf="@+id/password1" app:layout_constraintStart_toStartOf="@+id/password1"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/login" app:layout_constraintStart_toStartOf="@+id/login"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textAlignment="center"
+            android:gravity="center" android:layout_marginTop="16dp">
+
+        <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Don't have an Account?"
+                android:textColor="#4f5580" android:textSize="16sp"/>
+        <TextView
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:text="Register"
+                android:textColor="#41cd7d" android:textSize="16sp" android:id="@+id/signup1"
+                android:paddingLeft="5dp"/>
+
+
+    </LinearLayout>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/mobnum1"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAdminLogin" android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp" android:layout_marginStart="32dp" android:hint="Mobile Number"
+            android:textColorHint="#4f5580" android:background="@drawable/input_bg"
+            android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:paddingRight="10dp" android:backgroundTint="#242846"
+            android:textColor="#FFFFFF"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/password1"
+            app:layout_constraintEnd_toEndOf="@+id/mobnum1" app:layout_constraintStart_toStartOf="@+id/mobnum1"
+            app:layout_constraintTop_toBottomOf="@+id/mobnum1" android:layout_marginTop="16dp" android:hint="Password"
+            android:textColorHint="#4f5580" android:background="@drawable/input_bg"
+            android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:paddingRight="10dp" android:backgroundTint="#242846"
+            android:textColor="#FFFFFF"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
